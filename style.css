@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Root variables */
+:root {
+  --main-color: #170603;
+  --second-color: #ff3838;
+  --text-color: #444;
+  --gradient: linear-gradient(#170603, #ff3838);
+}
+
+/* Custom scrollbar styling */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+/* Section padding */
+section {
+  padding: 50px 100px;
+}
+
+/* Header styling */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: whitesmoke;
+  padding: 15px 100px; /* Fixed typo */
+}
+
+.logo img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto;
+  
+}
+.logo {
+  margin-right: auto; 
+}
+
+.navbar{
+  display: flex;
+  justify-content: center; 
+  margin-right: 350px;
+ 
+}
+.navbar a{
+  font-size : 1rem;
+  padding :10px 20px;
+  font-weight: 500;
+  color: var(--text-color);
+  position: relative;
+  
+}
+.navbar a::after {
+  content: " ";
+  width: 0px;
+  height: 3px;
+  background: var(--gradient); /* Corrected the variable usage */
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  transition: 1s;
+}
+.navbar a:hover::after{
+  width:100%;
+}
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.header-btn a{
+  padding :10px 20px;
+  color:var(--text-color);
+  font-weight:500;
+}
+.header-btn .sign-in{
+  background :rgb(53, 171, 90);
+  color :white;
+  border-radius: 0.3rem;
+}
+.header-btn .sign-out{
+  background: var(--main);
+}
+.home{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: url(https://images.hindustantimes.com/auto/img/2022/10/23/1600x900/Porsche_911_GT3_RS_1666520731695_1666520744256_1666520744256.jpeg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.text{
+  margin-bottom: 50%;
+
+}
+/* Add this CSS to your existing stylesheet */
+
+footer {
+  background-color: #f2f2f2; /* Background color for the footer */
+  padding: 20px 0; /* Add some padding for spacing */
+  text-align: center; /* Align content to the center */
+}
+
+.app-stores {
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.app-stores img {
+  margin: 5px 10px; /* Add some spacing between the images */
+  width: 150px; /* Set the width of the images */
+  height: auto; /* Maintain aspect ratio */
+  cursor:pointer;
+}
+div.scroll-container {
+  background-color:white;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+.form-container{
+  margin-top: 200px;
+}
+.form-container form{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 4rem;
+  left: 100px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 0.75px;
+  margin-top: 100px;
+  margin-left: 700px;
+}
+ 
+.text h1 span {
+  color: green; /* Making the word "Looking" green */
+  font-family: 'Times New Roman', Times, serif; /* Change to desired font */
+ font-size: 80px;
+}
+
+.text h1{
+  font-family: 'Times New Roman', Times, serif; 
+  font-size: 40px;
+}
+.form-container {
+  float: right;
+  margin-top: 20px; /* Adjust this value as needed */
+  margin-right: 20px; /* Adjust this value as needed */
+}
